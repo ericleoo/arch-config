@@ -63,7 +63,7 @@ alert = #F44336
 [bar/bar]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 16
+height = 20
 ;offset-x = 0%
 ;offset-y = 0%
 fixed-center = true

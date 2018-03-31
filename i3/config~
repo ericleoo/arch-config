@@ -200,7 +200,7 @@ bindsym XF86MonBrightnessDown exec light -U 5
 exec --no-startup-id polybar bar
 
 #wallpaper
-exec feh --bg-fill ~/Walls/arch3.jpg
+exec feh --bg-fill ~/Walls/darkforest.jpg
 
 #lock acpi
 exec xss-lock -- i3lock-fancy -n -g
@@ -211,18 +211,7 @@ bindsym $mod+Ctrl+l exec i3lock-fancy -n -g
 floating_maximum_size 1200 x 700
 
 #TouchPad toggle
-#bindsym XF86TouchpadToggle exec ~/.config/i3/toggletouchpad.sh
+bindsym XF86TouchpadToggle exec ~/.config/i3/toggletouchpad.sh
 
 #Disable touchpad by default
-#exec xinput --disable "SynPS/2 Synaptics TouchPad"
-
-bindsym $mod+equal gaps outer current plus 25
-bindsym $mod+minus gaps outer current minus 25
-bindsym $mod+Ctrl+equal gaps inner current plus 5                                               
-bindsym $mod+Ctrl+minus gaps inner current minus 5
-
-#SS
-bindsym Print exec scrot ~/Screenshots/'%Y-%m-%d_%H:%M:%S.png'
-
-exec sudo systemctl start tlp.service tlp-sleep.service
-#exec sudo systemctl start man-db.service
+exec xinput --disable "SynPS/2 Synaptics TouchPad"
