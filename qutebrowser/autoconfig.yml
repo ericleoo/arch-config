@@ -13,6 +13,9 @@ settings:
       normal:
         M: hint links spawn mpv {hint-url}
         m: spawn mpv {url}
+        xb: config-cycle statusbar.hide
+        xt: config-cycle tabs.show always switching
+        xx: config-cycle statusbar.hide ;; config-cycle tabs.show always switching
   colors.completion.even.bg:
     global: '#ffffff'
   colors.completion.fg:
@@ -42,6 +45,24 @@ settings:
     global: '#ECEFF1'
   colors.statusbar.normal.fg:
     global: black
+  colors.statusbar.passthrough.bg:
+    global: darkblue
+  colors.statusbar.private.bg:
+    global: '#888888'
+  colors.statusbar.private.fg:
+    global: black
+  colors.statusbar.progress.bg:
+    global: white
+  colors.statusbar.url.error.fg:
+    global: red
+  colors.statusbar.url.fg:
+    global: black
+  colors.statusbar.url.hover.fg:
+    global: black
+  colors.statusbar.url.success.http.fg:
+    global: black
+  colors.statusbar.url.success.https.fg:
+    global: black
   colors.tabs.bar.bg:
     global: '#555555'
   colors.tabs.even.bg:
@@ -60,6 +81,8 @@ settings:
     global: '#CFD8DC'
   colors.tabs.selected.odd.fg:
     global: black
+  content.headers.user_agent:
+    global: null
   downloads.position:
     global: top
   downloads.remove_finished:
@@ -112,6 +135,15 @@ settings:
     global: false
   statusbar.position:
     global: bottom
+  statusbar.widgets:
+    global:
+    - keypress
+    - url
+    - history
+    - tabs
+    - progress
+  tabs.show:
+    global: always
   url.default_page:
     global: https://www.google.com
   url.searchengines:

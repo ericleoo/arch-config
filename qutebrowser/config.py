@@ -33,4 +33,5 @@ c.url.searchengines = {
     'vw': 'http://vim.wikia.com/wiki/Special:Search?fulltext=Search&query={}',
     'bc': 'https://www.bitchute.com/search?q={}&sort=date_created%20desc',
     'mdbg': 'https://mdbg.net/chinese/dictionary?page=worddict&wdrst=0&wdqb={}',
+    'hckn': 'https://hn.algolia.com/?query={}&sort=byPopularity&prefix&page=0&dateRange=all&type=story'
 }
