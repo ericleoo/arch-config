@@ -8,6 +8,8 @@ settings:
       q: quit
       w: session-save
       wq: quit --save
+  backend:
+    global: webengine
   bindings.commands:
     global:
       normal:
@@ -81,6 +83,8 @@ settings:
     global: '#CFD8DC'
   colors.tabs.selected.odd.fg:
     global: black
+  content.cookies.store:
+    global: true
   content.headers.user_agent:
     global: null
   downloads.position:
